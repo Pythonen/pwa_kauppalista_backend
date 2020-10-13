@@ -39,5 +39,4 @@ def default_error_handler(e):
     print(e)
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
-    print('Listening on port ')
+    socketio.run(app, debug=True,port=process.ENV.PORT || 10001)
